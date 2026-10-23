@@ -7,26 +7,42 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#05060f',
-        surface: '#0b0d1c',
+        // Theme: Jet Black #0A0A0A · Cerulean Blue #007BA7 · Neon Rose #FF2D95
+        background: '#0A0A0A',
+        surface: '#121212',
         primary: {
-          DEFAULT: '#3b82f6',
-          50: '#eff6ff',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
+          DEFAULT: '#007BA7',
+          50: '#E6F4F9',
+          400: '#2FA6D1',
+          500: '#007BA7',
+          600: '#006A91',
+          700: '#00587A',
         },
         accent: {
-          DEFAULT: '#8b5cf6',
-          400: '#a78bfa',
-          500: '#8b5cf6',
-          600: '#7c3aed',
+          DEFAULT: '#FF2D95',
+          400: '#FF5CAD',
+          500: '#FF2D95',
+          600: '#E01580',
         },
+        // the "cyan" name is kept so existing classes keep working; it is now Neon Rose
         cyan: {
-          DEFAULT: '#22d3ee',
-          400: '#22d3ee',
-          500: '#06b6d4',
+          DEFAULT: '#FF2D95',
+          400: '#FF5CAD',
+          500: '#FF2D95',
+        },
+        // neutral greys (instead of blue-tinted slate) so text matches the jet-black background
+        slate: {
+          50: '#FAFAFA',
+          100: '#F5F5F5',
+          200: '#E5E5E5',
+          300: '#D4D4D4',
+          400: '#A3A3A3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+          950: '#0A0A0A',
         },
       },
       fontFamily: {
@@ -35,8 +51,8 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'brand-gradient': 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #22d3ee 100%)',
-        'mesh': 'radial-gradient(at 20% 20%, rgba(59,130,246,0.18) 0px, transparent 50%), radial-gradient(at 80% 0%, rgba(139,92,246,0.18) 0px, transparent 50%), radial-gradient(at 60% 80%, rgba(34,211,238,0.14) 0px, transparent 50%)',
+        'brand-gradient': 'linear-gradient(135deg, #007BA7 0%, #FF2D95 100%)',
+        'mesh': 'radial-gradient(at 20% 20%, rgba(0,123,167,0.20) 0px, transparent 50%), radial-gradient(at 80% 0%, rgba(255,45,149,0.14) 0px, transparent 50%), radial-gradient(at 60% 80%, rgba(0,123,167,0.14) 0px, transparent 50%)',
       },
       keyframes: {
         float: {
