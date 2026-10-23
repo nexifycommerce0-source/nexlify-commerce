@@ -16,8 +16,8 @@ function MainBlob() {
     <Float speed={1.4} rotationIntensity={0.6} floatIntensity={1.2}>
       <Icosahedron ref={ref} args={[1.6, 12]}>
         <MeshDistortMaterial
-          color="#6d5dfc"
-          emissive="#1e1b4b"
+          color="#007BA7"
+          emissive="#03202b"
           roughness={0.15}
           metalness={0.85}
           distort={0.4}
@@ -33,17 +33,17 @@ function Accents() {
     <>
       <Float speed={2} floatIntensity={2} rotationIntensity={2}>
         <Torus args={[0.5, 0.16, 24, 64]} position={[2.6, 1.3, -1]}>
-          <meshStandardMaterial color="#22d3ee" metalness={0.9} roughness={0.2} emissive="#0e7490" emissiveIntensity={0.4} />
+          <meshStandardMaterial color="#FF2D95" metalness={0.9} roughness={0.2} emissive="#7a1049" emissiveIntensity={0.4} />
         </Torus>
       </Float>
       <Float speed={1.6} floatIntensity={2.4} rotationIntensity={1.4}>
         <Sphere args={[0.34, 32, 32]} position={[-2.7, -1, -0.5]}>
-          <meshStandardMaterial color="#3b82f6" metalness={0.8} roughness={0.25} emissive="#1d4ed8" emissiveIntensity={0.4} />
+          <meshStandardMaterial color="#007BA7" metalness={0.8} roughness={0.25} emissive="#005a7a" emissiveIntensity={0.4} />
         </Sphere>
       </Float>
       <Float speed={2.2} floatIntensity={1.6} rotationIntensity={2}>
         <Icosahedron args={[0.28, 0]} position={[2.2, -1.5, 0.5]}>
-          <meshStandardMaterial color="#a78bfa" metalness={0.6} roughness={0.3} flatShading />
+          <meshStandardMaterial color="#FF2D95" metalness={0.6} roughness={0.3} flatShading />
         </Icosahedron>
       </Float>
     </>
@@ -60,9 +60,9 @@ export default function HeroScene() {
     >
       <Suspense fallback={null}>
         <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 5, 5]} intensity={1.4} color="#a5b4fc" />
-        <pointLight position={[-5, -3, 2]} intensity={2} color="#22d3ee" />
-        <pointLight position={[5, -2, -3]} intensity={1.5} color="#8b5cf6" />
+        <directionalLight position={[5, 5, 5]} intensity={1.4} color="#d6eef7" />
+        <pointLight position={[-5, -3, 2]} intensity={2} color="#33b8e6" />
+        <pointLight position={[5, -2, -3]} intensity={1.5} color="#FF2D95" />
         <MainBlob />
         <Accents />
       </Suspense>
