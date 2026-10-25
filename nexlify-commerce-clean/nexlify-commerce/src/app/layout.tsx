@@ -7,6 +7,7 @@ import Footer from '@/components/layout/Footer';
 import ScrollProgress from '@/components/ui/ScrollProgress';
 import PageLoader from '@/components/ui/PageLoader';
 import Cursor from '@/components/ui/Cursor';
+import DragonBackground from '@/components/three/DragonBackground';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
 const sora = Sora({ subsets: ['latin'], variable: '--font-sora', display: 'swap' });
@@ -71,6 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
+        <DragonBackground />
       </body>
     </html>
   );
